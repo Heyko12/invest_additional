@@ -1,0 +1,24 @@
+{
+    "$schema": "https://schema.freqtrade.io/schema.json",
+    "max_open_trades": 3,
+    "stake_currency": "USDT",
+    "stake_amount": "unlimited",
+    "fee": 0.0001,
+    "dry_run": false,
+    "pairlists": [{ "method": "StaticPairList" }],
+    "exchange": {
+      "name": "bybit",
+      "pair_whitelist": ["BTC/USDT"]
+    },
+    "entry_pricing": {
+      "price_side": "same",
+      "use_order_book": true,
+      "order_book_top": 1
+    },
+    "exit_pricing": {
+      "price_side": "same",
+      "use_order_book": true,
+      "order_book_top": 1
+    }
+}
+  
